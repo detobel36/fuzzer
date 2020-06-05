@@ -3,7 +3,7 @@
 Project realised for the cours: Computer System Security
 - Rémy Detobel
 - NOMA: `99841900`    
-(Github link: https://github.com/detobel36/fuzzer)[https://github.com/detobel36/fuzzer]
+[Github link: https://github.com/detobel36/fuzzer](https://github.com/detobel36/fuzzer)
 
 
 ## Vulnerabilities
