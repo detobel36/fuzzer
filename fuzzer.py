@@ -294,10 +294,10 @@ class ABCImage:
             self._convertResultMsg = str(e)
         else:
             self._runWithoutProblem = True
-            self._convertResultMsg = executionResult.decode('utf-8')
+            self._convertResultMsg = executionResult
             if(VERBOSE):
                 print("Output of " + str(self.getFormatedImageDescription()))
-                print(self._convertResultMsg)
+                print(self.getConvertResultMsg())
 
         try:
             os.remove(self._outputFile)
@@ -322,7 +322,7 @@ class ABCImage:
         Returns:
             :str: The result of the execution (output or error message)
         """
-        return self._convertResultMsg
+        return self._convertResultMsg.decode('utf-8')
 
     def _saveIfSuccessDeleteOtherwise(self):
         """Rename the file of this image if the conversion failed, otherwise delete this file
@@ -380,7 +380,7 @@ def testCommentSize(testAllChar = False): # MATCH
     if(VERBOSE):
         print("Test comment size")
 
-    for testCommentSize in range(0, 2000):
+    for testCommentSize in range(0, 3000):
         commentImage = ABCImage("Comment_Size_" + str(testCommentSize))
         commentImage.setComment("a" * testCommentSize)
         if(not commentImage.runAll()):

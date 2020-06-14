@@ -15,8 +15,8 @@ Project realised for the cours: Computer System Security
     The program crash if an header id have value 117
 
 - `success_Comment_Size_1641.img`    
-    The program carsh if a comment have a size bigger than 1641 character. Notice that the converter
-    have a protection for big number.
+    The program carsh if a comment have a size bigger than 1641 characters. Notice that the converter
+    have a protection for very big number (upper 2499 characters).
 
 - `success_Author_Character_28197.img`    
     The program crash on specific character in author name.   
