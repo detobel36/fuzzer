@@ -23,7 +23,7 @@ Project realised for the cours: Computer System Security
     Notice that this work also for Comment (see `success_Comment_Character_29952.img`)
 
 - `success_Height_ffffffff.img`    
-    The program crash if height have the value "ffff ffff".
+    The program crash if height have the value "ffff ffff" (This value correspond to negative value if cast).
 
 
 **BONUS**
